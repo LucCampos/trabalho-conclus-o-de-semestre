@@ -41,6 +41,10 @@ body {
     color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
+    background-image: url("img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -159,6 +163,10 @@ select:focus {
     font-weight: 500;
 }
 
+.titulo {
+    color: white;
+}
+
 .message.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
 .message.error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
 
@@ -262,11 +270,11 @@ textarea {
 
 .page-header h1 {
     font-size: 2rem;
-    color: var(--primary);
+    color: white;
     margin-bottom: .35rem;
 }
 
-.page-header p { color: var(--text-muted); font-size: 1rem; }
+.page-header p { color: white; font-size: 1rem; }
 
 .menu-grid {
     display: grid;
