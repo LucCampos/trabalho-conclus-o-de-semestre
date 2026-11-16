@@ -285,13 +285,13 @@ textarea {
 }
 
 .menu-card {
-    background: var(--surface);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
     transition: transform .2s, box-shadow .2s;
     padding-top: 60px;
     padding-bottom: 60px;
-    border: 1px solid var(--border);
+    border: 0px solid var(--border);
 }
 
 .menu-card:hover {
@@ -308,8 +308,8 @@ textarea {
 }
 
 .menu-card-icon  { font-size: 2.2rem; margin-bottom: .75rem; font-size: 5rem;}
-.menu-card-title { font-size: 1.05rem; font-weight: 600; color: var(--primary); margin-bottom: .35rem; }
-.menu-card-desc  { font-size: .85rem; color: var(--text-muted); }
+.menu-card-title { font-size: 1.05rem; font-weight: 600; color: white; margin-bottom: .35rem; }
+.menu-card-desc  { font-size: .85rem; color: white; }
 
 /* -----------------------------------------------
    8. TIPOGRAFIA (h2/h3 aparecem a partir desta tela)

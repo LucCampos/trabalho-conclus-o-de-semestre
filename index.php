@@ -30,7 +30,7 @@ include('valida_sessao.php');
 
     <!-- Cabeçalho de boas-vindas -->
     <div class="page-header">
-        <h1 class="titulo">Catálogo de jogos</h1>
+        <h1>Catálogo de jogos</h1>
         <!--
             $_SESSION['usuario'] contém o nome salvo no login.
             htmlspecialchars() protege contra XSS na exibição.
