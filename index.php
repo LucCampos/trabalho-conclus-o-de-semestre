@@ -43,23 +43,23 @@ include('valida_sessao.php');
 
         <div class="menu-card">
             <a href="cadastro_artista.php">
-                <div class="menu-card-icon">🎤</div>
+                <div class="menu-card-icon">🕹️</div>
                 <div class="menu-card-title">Gerenciar Artistas</div>
                 <div class="menu-card-desc">Cadastre e edite artistas</div>
             </a>
         </div>
 
         <div class="menu-card">
-            <a href="cadastro_musica.php">
-                <div class="menu-card-icon">🎵</div>
+            <a href="cadastro_jogo.php">
+                <div class="menu-card-icon">🎮</div>
                 <div class="menu-card-title">Cadastrar Jogos</div>
                 <div class="menu-card-desc">Adicione músicas ao sistema</div>
             </a>
         </div>
 
         <div class="menu-card">
-            <a href="listagem_musicas.php">
-                <div class="menu-card-icon">🎼</div>
+            <a href="listagem_jogos.php">
+                <div class="menu-card-icon">🔍</div>
                 <div class="menu-card-title">Listagem de jogos</div>
                 <div class="menu-card-desc">Visualize e filtre todas as músicas</div>
             </a>

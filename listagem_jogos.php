@@ -121,7 +121,7 @@ if (!empty($params)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca Musical — Catálogo de jogos</title>
+    <title>🕹️Catálogo de jogos</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🎵</text></svg>">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -129,7 +129,7 @@ if (!empty($params)) {
 <div class="container">
 
     <div class="page-header-bar">
-        <h2>🎼 Biblioteca Musical</h2>
+        <h2>🕹️Catálogo de jogos</h2>
         <div class="header-actions">
             <a href="index.php" class="btn-back">⬅ Voltar ao Menu</a>
             <a href="cadastro_musica.php" class="btn-primary">➕ Nova Música</a>
@@ -243,7 +243,7 @@ if (!empty($params)) {
                             </td>
                             <td>
                                 <div class="action-buttons">
-                                    <a href="cadastro_musica.php?edit_id=<?php echo $row['id']; ?>"
+                                    <a href="cadastro_jogo.php?edit_id=<?php echo $row['id']; ?>"
                                        class="btn-edit">✏️ Editar</a>
                                     <!--
                                         http_build_query($_GET) preserva os filtros ativos
@@ -259,7 +259,7 @@ if (!empty($params)) {
                 <?php else: ?>
                     <tr>
                         <td colspan="7" class="empty-cell">
-                            <?php echo !empty($_GET) ? 'Nenhuma música encontrada com esses filtros.' : 'Nenhuma música cadastrada ainda.'; ?>
+                            <?php echo !empty($_GET) ? 'Nenhum jogo encontrado com esses filtros.' : 'Nenhum jogo cadastrado ainda.'; ?>
                         </td>
                     </tr>
                 <?php endif; ?>

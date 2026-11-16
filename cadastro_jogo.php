@@ -86,12 +86,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $stmt  = $conn->prepare($sql);
                 $tipos = str_repeat('s', count($params) - 1) . 'i';
                 $stmt->bind_param($tipos, ...$params);
-                $mensagem = "Música atualizada com sucesso!";
+                $mensagem = "Jogo atualizado com sucesso!";
             } else {
                 // INSERT
                 $stmt = $conn->prepare("INSERT INTO musicas (artista_id,titulo,album,genero,letra,youtube_link,imagem_capa) VALUES (?,?,?,?,?,?,?)");
                 $stmt->bind_param("sssssss", $artista_id, $titulo, $album, $genero, $letra, $youtube_link, $imagem_capa);
-                $mensagem = "Música cadastrada com sucesso!";
+                $mensagem = "Jogo cadastrado com sucesso!";
             }
             $class = $stmt->execute() ? "success" : "error";
             if ($class === "error") $mensagem = "Erro: " . $stmt->error;
@@ -170,7 +170,7 @@ if ($artista_id_filtro) {
         <h2><?php echo $musica ? '✏️ Editar Música' : '🎵 Nova Música'; ?></h2>
         <div class="header-actions">
             <?php if ($artista_id_filtro): ?>
-                <a href="cadastro_artista.php" class="btn-back">⬅ Voltar para Artistas</a>
+                <a href="cadastro_jogo.php" class="btn-back">⬅ Voltar para Artistas</a>
             <?php else: ?>
                 <a href="index.php" class="btn-back">⬅ Voltar ao Menu</a>
             <?php endif; ?>
@@ -267,7 +267,7 @@ if ($artista_id_filtro) {
                 <?php echo $musica ? '💾 Atualizar' : '➕ Cadastrar'; ?>
             </button>
             <?php if ($musica): ?>
-                <a href="cadastro_musica.php<?php echo $artista_id_filtro ? '?artista_id='.$artista_id_filtro : ''; ?>"
+                <a href="cadastro_jogo.php<?php echo $artista_id_filtro ? '?artista_id='.$artista_id_filtro : ''; ?>"
                    class="btn-back">✖ Cancelar</a>
             <?php endif; ?>
         </div>

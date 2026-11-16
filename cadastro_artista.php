@@ -253,7 +253,7 @@ $artistas = $conn->query("SELECT * FROM artistas ORDER BY nome");
                                        onclick="return confirm('Excluir <?php echo addslashes($row['nome']); ?>?')"
                                        class="btn-delete">🗑️</a>
                                     <a href="cadastro_musica.php?artista_id=<?php echo $row['id']; ?>"
-                                       class="btn-music">🎵 Músicas</a>
+                                       class="btn-music">Jogos</a>
                                 </div>
                             </td>
                         </tr>
